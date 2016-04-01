@@ -1,0 +1,84 @@
+$horizontal-margin: 0.5em
+
+//Default Colors:
+$dark-red: #83001f
+$red: #db3f1f
+$yellow: #ffbc31
+$green: #6ab141
+$dark-green: #00613a
+
+
+body
+  font-family: 'Source Sans Pro', sans-serif
+  color: #373737
+  height: 100%
+
+header
+  text-align: center
+
+#logo
+  height: 100%
+  margin: 0 auto
+  display: block
+
+#inconvenience
+  text-align: center
+
+#maintenance
+  margin: 4em $horizontal-margin
+
+#team
+  font-style: italic
+  text-align: right
+
+#minchiatina
+  height: 1em
+  width: 100%
+  margin: 0 auto
+  margin-top: 8em
+  padding: 0
+
+#minchiatina > .bars
+  height: 0.4em
+  width: 20%
+  margin: 0
+  padding: 0
+  display: inline-block
+  margin-right: -4px
+
+#a
+  background-color: $dark-red
+
+#b
+  background-color: $red
+
+#c
+  background-color: $yellow
+
+#d
+  background-color: $green
+
+#e
+  background-color: $dark-green
+
+#bottom
+  height: 1em
+  width: 100%
+
+@media screen and (min-width: 641px) and (max-width: 1270px)
+  #minchiatina
+    margin-top: 20em
+  #team
+    text-align: center
+@media screen and (min-width: 1280px) and (max-width: 1367px)
+  #minchiatina
+    margin-top: 16em
+    width: 50%
+  #team
+    text-align: center
+@media screen and (min-width: 1370px) and (max-width: 1920px)
+  #minchiatina
+    margin-top: 27em
+    width: 50%
+  #team
+    text-align: center
