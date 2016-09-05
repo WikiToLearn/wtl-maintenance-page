@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{DOCUMENT_ROOT}/index.html -f
+RewriteCond %{SCRIPT_FILENAME} !index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.*$ /index.html [R=503,L]
+ErrorDocument 503 /index.html
+Header Set Cache-Control "max-age=0, no-store"
