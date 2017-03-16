@@ -1,79 +1,88 @@
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   color: #373737;
-  height: 100%; }
+  height: 100%;
+  margin: 0;
+}
 
 header {
-  text-align: center; }
+  text-align: center;
+}
+
+a{
+  color: #0275d8;
+  text-decoration: none;
+}
 
 #logo {
   height: 100%;
   margin: 0 auto;
-  display: block; }
+  display: block;
+}
 
 #inconvenience {
-  text-align: center; }
+  text-align: center;
+}
 
 #maintenance {
-  margin: 4em 0.5em; }
+  margin: 4em 0.5em;
+}
 
 #team {
   font-style: italic;
-  text-align: right; }
+  text-align: right;
+  text-align: center;
+}
 
-#minchiatina {
+#wiki-colors {
   height: 1em;
   width: 100%;
   margin: 0 auto;
   margin-top: 8em;
-  padding: 0; }
+  padding: 0;
+}
 
-#minchiatina > .bars {
-  height: 0.4em;
-  width: 20%;
-  margin: 0;
+#wiki-colors > .bars {
+  height: 0.5em;
+  margin: 0 auto;
   padding: 0;
   display: inline-block;
-  margin-right: -4px; }
-
-#a {
-  background-color: #83001f; }
-
-#b {
-  background-color: #db3f1f; }
-
-#c {
-  background-color: #ffbc31; }
-
-#d {
-  background-color: #6ab141; }
-
-#e {
-  background-color: #00613a; }
+  margin-right: -4px;
+}
 
 #bottom {
   height: 1em;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto;
+}
 
-@media screen and (min-width: 641px) and (max-width: 1270px) {
-  #minchiatina {
-    margin-top: 20em; }
+#wiki-colors img{
+  max-height: 100%;
+  max-width: 100%;
+}
 
-  #team {
-    text-align: center; } }
-@media screen and (min-width: 1280px) and (max-width: 1367px) {
-  #minchiatina {
-    margin-top: 16em;
+@media screen and (min-width: 641px) and (max-width: 1279px) {
+  #wiki-colors {
+    margin-bottom: 1em;
+    width: 60%;
+   }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1369px) {
+  #wiki-colors {
+    margin-bottom: 1em;
     width: 50%; }
+}
 
-  #team {
-    text-align: center; } }
 @media screen and (min-width: 1370px) and (max-width: 1920px) {
-  #minchiatina {
-    margin-top: 27em;
-    width: 50%; }
-
-  #team {
-    text-align: center; } }
-
-/*# sourceMappingURL=main.css.map */
+  #wiki-colors {
+    margin-bottom: 1em;
+    width: 50%;
+  }
+}
