@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Site Maintenance</title>
+  <title>WikiToLearn Maintenance</title>
   <link rel="stylesheet" href="/css/normalize.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="/css/main.css" media="screen" title="no title" charset="utf-8">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' >
@@ -20,9 +20,11 @@
     <p id="inconvenience">
       Sorry about the inconvenience - we are performing some maintenance at the moment.
       <br>
-      <!-- $TIME available? Leave this! -->
-      <span> The maintenance will end at around $TIME. </span>
-      <!-- $TIME not available? Change the line above! -->
+      <!-- {% if maintenance_time_end is defined %} -->
+      <span> The maintenance will end at around {{ maintenance_time_end }}. </span>
+      <!-- {% else %} -->
+      <span> The maintenance will end as soon as possible </span>
+      <!-- {% endif %} -->
       <br>
       More updates on our
       <a href="//facebook.com/WikiToLearn" rel = "nofollow" target = "_blank"/>Facebook page</a>
@@ -35,7 +37,7 @@
   </p>
   <section id="bottom">
     <div id = "wiki-colors">
-      <img src = "/images/lines2.svg" alt = "Lines" id = "#lines">  
+      <img src = "/images/lines2.svg" alt = "Lines" id = "#lines">
     </div>
 
   </section>
